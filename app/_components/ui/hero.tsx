@@ -16,7 +16,7 @@ export function Hero() {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <div className="w-full lg:w-1/2 px-4">
-            <h2 className="text-4xl font-bold text-gray-800 text-center lg:text-left">
+            <h2 className="text-4xl font-bold text-black text-center lg:text-left">
               Bem vindo a minha barbearia
             </h2>
             <p className="mt-4 mb-8">
