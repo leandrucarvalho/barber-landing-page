@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dom Ramon BarberShop Website
 
-## Getting Started
+Este projeto é uma landing page para a Dom Ramon BarberShop, desenvolvida utilizando Next.js, Tailwind CSS e TypeScript. A página inicial inclui seções para Home, Serviços e Sobre o Barbeiro, fornecendo aos usuários informações sobre a barbearia e seus serviços.
 
-First, run the development server:
+## Índice
+- [Dom Ramon BarberShop Website](#dom-ramon-barbershop-website)
+  - [Índice](#índice)
+  - [Instalação](#instalação)
+  - [Uso](#uso)
+    - [Seção Home](#seção-home)
+    - [Seção Serviços](#seção-serviços)
+    - [Seção Sobre](#seção-sobre)
+  - [Estrutura do Projeto](#estrutura-do-projeto)
+    - [Componentes](#componentes)
+    - [Estilização](#estilização)
+  - [Licença](#licença)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Instalação
+
+Para começar com este projeto, siga os passos abaixo:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seuusuario/dom-ramon-barbershop.git
+   cd dom-ramon-barbershop
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Abra seu navegador e navegue até `http://localhost:3000`.
+
+## Uso
+
+### Seção Home
+Contém uma mensagem de boas-vindas e um botão de call-to-action.
+
+### Seção Serviços
+Lista os serviços oferecidos pela barbearia.
+
+### Seção Sobre
+Fornece informações sobre o barbeiro e a história da barbearia.
+
+## Estrutura do Projeto
+
+```
+├── components
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Services.tsx
+│   ├── About.tsx
+│   └── Footer.tsx
+├── pages
+│   ├── _app.tsx
+│   └── index.tsx
+├── public
+│   ├── images
+│   │   └── barber.jpg
+│   └── favicon.ico
+├── styles
+│   └── globals.css
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Componentes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Header**: Barra de navegação com links para diferentes seções da página.
+- **Hero**: Seção introdutória com uma mensagem de boas-vindas e uma imagem.
+- **Services**: Lista os serviços oferecidos pela barbearia.
+- **About**: Informações sobre o barbeiro e a barbearia.
+- **Footer**: Informações de contato e links para redes sociais.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Estilização
 
-## Learn More
+O projeto utiliza Tailwind CSS para estilização. As cores personalizadas e outros estilos são definidos no arquivo `globals.css`.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
