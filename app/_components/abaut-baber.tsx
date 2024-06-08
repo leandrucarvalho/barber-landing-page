@@ -1,11 +1,14 @@
 const About = () => {
   return (
-    <div id="abaut" className="bg-[#f7f7f7] text-black rounded-2xl py-16">
-      <h2 className="text-4xl font-bold text-center">Sobre o Barbeiro</h2>
+    <div id="abaut" className="card text-black py-16">
+      <h2 className="text-4xl font-bold text-center">Sobre Mim</h2>
       <div className="flex flex-col items-center p-4">
-        <p className="text-center max-w-2xl">
-          Aqui está uma breve descrição sobre o barbeiro. Sua experiência,
-          especializações e o que o torna único.
+        <p className="text-justify max-w-2xl">
+          sou profissional atuante na área de beleza, barbeiro e cabeleireiro,
+          onde sou especialista em degradê e cortes estilizados, venho com a
+          proposta de não só trazer um ótimo serviço, mais entender o seu gosto
+          e lhe proporcionar um momento ímpar onde a sua autoestima é
+          minha prioridade!
         </p>
       </div>
     </div>

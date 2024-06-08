@@ -1,6 +1,9 @@
+"use client";
+
 import About from "./_components/abaut-baber";
 
 import Header from "./_components/header";
+import ScrollToTopButton from "./_components/scrollToTopButton";
 
 import Services from "./_components/services";
 import { Footer } from "./_components/ui/footer";
@@ -11,19 +14,20 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <div className="pt-8 px-4">
+        <div className=" px-4">
           <Hero />
-        </div>
-        <div id="services" className="pt-8 px-4">
-          <Services />
         </div>
         <div id="about" className="pt-8 px-4">
           <About />
         </div>
+        <div id="services" className="pt-8 px-4">
+          <Services />
+        </div>
       </main>
-      <div className="pt-8 px-4">
+      <div className="pt-8 px-4 pb-4">
         <Footer />
       </div>
+      <ScrollToTopButton />
     </>
   );
 };

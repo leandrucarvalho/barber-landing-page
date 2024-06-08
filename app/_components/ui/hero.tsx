@@ -9,20 +9,17 @@ import { Button } from "./button";
 
 export function Hero() {
   return (
-    <section
-      key="1"
-      className="flex items-center justify-center bg-[#f7f7f7] py-10 rounded-2xl"
-    >
+    <section key="1" className="flex items-center justify-center card py-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <div className="w-full lg:w-1/2 px-4">
             <h2 className="text-4xl font-bold text-black text-center lg:text-left">
-              Bem vindo a minha barbearia
+              Bem vindo a Dom Ramon BarberShop
             </h2>
             <p className="mt-4 mb-8">
               Descubra a nossa excelência em barbearia
             </p>
-            <Button className="bg-black text-white py-3 px-8">
+            <Button className="bg-black text-white py-3 px-8 hover:bg-background hover:text-foreground">
               Agende agora
             </Button>
           </div>

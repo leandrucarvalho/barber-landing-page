@@ -9,7 +9,7 @@ import { JSX, SVGProps } from "react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#f7f7f7] text-black py-8 rounded-2xl">
+    <footer id="footer" className="card text-black py-8">
       <div className="container mx-auto gap-8 flex flex-wrap justify-between">
         <div className="">
           <h3 className="text-2xl font-bold">Dom Ramon Barbearia</h3>
