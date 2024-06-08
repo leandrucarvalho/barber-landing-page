@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Mostrar o botão quando rolar até o final da página
   useEffect(() => {
     const toggleVisibility = () => {
       if (
@@ -22,7 +21,6 @@ const ScrollToTopButton = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Rolar para o topo ao clicar no botão
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
