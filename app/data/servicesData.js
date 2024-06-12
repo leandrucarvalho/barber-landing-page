@@ -136,6 +136,24 @@ export const servicesData = [
       description: "Descrição do serviço de escova masculina",
       duration: "20 min",
       price: "R$ 10,00"
+    },
+    {
+      title: "Serviço por assinatura(Corte masculino)",
+      description: "Pode realizar o serviço uma vez por semana",
+      duration: "40 min",
+      price: "R$ 50,00"
+    },
+    {
+      title: "Serviço por assinatura(Corte barba)",
+      description: "Pode realizar o serviço uma vez por semana",
+      duration: "30 min",
+      price: "R$ 30,00"
+    },
+    {
+      title: "Serviço por assinatura(Corte + Barba)",
+      description: "Pode realizar o serviço uma vez por semana",
+      duration: "30 min",
+      price: "R$ 30,00"
     }
   ];
   
