@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <div className=" px-4">
+        <div className="px-4">
           <Hero />
         </div>
         <div id="about" className="pt-8 px-4">
