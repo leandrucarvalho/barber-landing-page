@@ -10,7 +10,7 @@ const Services = () => {
           <Card
             key={service.title}
             title={service.title}
-            time={service.time}
+            time={service.duration}
             price={service.price}
           />
         ))}

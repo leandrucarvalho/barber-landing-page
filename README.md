@@ -8,8 +8,8 @@ Este projeto é uma landing page para a Dom Ramon BarberShop, desenvolvida utili
   - [Instalação](#instalação)
   - [Uso](#uso)
     - [Seção Home](#seção-home)
-    - [Seção Serviços](#seção-serviços)
     - [Seção Sobre](#seção-sobre)
+    - [Seção Serviços](#seção-serviços)
   - [Estrutura do Projeto](#estrutura-do-projeto)
     - [Componentes](#componentes)
     - [Estilização](#estilização)
@@ -38,15 +38,16 @@ Para começar com este projeto, siga os passos abaixo:
 4. Abra seu navegador e navegue até `http://localhost:3000`.
 
 ## Uso
+[Dom Ramon BarberShop Website](https://dom-ramon-barber.vercel.app/)
 
 ### Seção Home
 Contém uma mensagem de boas-vindas e um botão de call-to-action.
 
-### Seção Serviços
-Lista os serviços oferecidos pela barbearia.
-
 ### Seção Sobre
 Fornece informações sobre o barbeiro e a história da barbearia.
+
+### Seção Serviços
+Lista os serviços oferecidos pela barbearia.
 
 ## Estrutura do Projeto
 
