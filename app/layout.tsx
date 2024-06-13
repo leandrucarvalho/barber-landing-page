@@ -9,8 +9,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Barbearia",
-  description: "Landing page de uma barbearia",
+  icons: [
+    {
+      url: "/tesoura.ico",
+      type: "icon",
+    },
+  ],
+  title: "Dom Ramon Barbearia",
+  description: "Site para o dom ramon barberia",
 };
 
 export default function RootLayout({

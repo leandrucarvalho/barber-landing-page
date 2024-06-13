@@ -1,6 +1,6 @@
 "use client";
 
-import About from "./_components/abaut-baber";
+import About from "./_components/abaut-barber";
 
 import Header from "./_components/header";
 import ScrollToTopButton from "./_components/scrollToTopButton";

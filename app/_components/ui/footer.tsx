@@ -30,9 +30,10 @@ export function Footer() {
           <h3 className="text-2xl font-bold">Siga-nos</h3>
           <div className="flex space-x-2">
             <Link
-              className="hover:text-gray-600"
+              className="hover:text-[#DC5F00]"
               href="https://www.instagram.com/dom_ramonn"
               target="_blank"
+              aria-hidden="true"
             >
               <InstagramIcon className="h-6 w-6" />
             </Link>
