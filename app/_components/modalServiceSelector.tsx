@@ -1,9 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 import { servicesData } from "../data/servicesData";
-
-import ReactModal from "react-modal";
 import { Service } from "@/types/services";
+import ReactModal from "react-modal";
 
 ReactModal.setAppElement("#root");
 
@@ -29,12 +28,15 @@ const ModalServiceSelector: React.FC<ModalServiceSelectorProps> = ({
 
   const handleWhatsAppClick = () => {
     if (selectedServices.length > 0) {
-      const message = selectedServices
-        .map(
-          (service) =>
-            `Olá, gostaria de agendar um horário para o serviço: ${service.title}. Duração: ${service.duration}. Preço: ${service.price}.`
-        )
-        .join("\n");
+      const message =
+        selectedServices.length === 1
+          ? `Olá, gostaria de agendar um horário para o serviço: ${selectedServices[0].title}. Duração: ${selectedServices[0].duration}. Preço: ${selectedServices[0].price}.`
+          : `Olá, gostaria de agendar um horário para os seguintes serviços:\n${selectedServices
+              .map(
+                (service) =>
+                  `${service.title} - Duração: ${service.duration}, Preço: ${service.price}`
+              )
+              .join("\n")}`;
       const whatsappNumber = "5581985016452";
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         message
@@ -70,16 +72,14 @@ const ModalServiceSelector: React.FC<ModalServiceSelectorProps> = ({
             </li>
           ))}
         </ul>
-        <div className="mt-11">
-          {selectedServices && (
-            <button
-              onClick={handleWhatsAppClick}
-              className="fixed bottom-0 left-0 right-0 bg-black text-white py-2 px-4 m-4 rounded"
-            >
-              Agendar no WhatsApp
-            </button>
-          )}
-        </div>
+        {selectedServices.length > 0 && (
+          <button
+            onClick={handleWhatsAppClick}
+            className="fixed bottom-0 left-0 right-0 bg-black text-white py-2 px-4 m-4 rounded"
+          >
+            Agendar no WhatsApp
+          </button>
+        )}
       </div>
     </Modal>
   );
