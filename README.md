@@ -52,21 +52,30 @@ Lista os serviços oferecidos pela barbearia.
 ## Estrutura do Projeto
 
 ```
-├── components
-│   ├── Header.tsx
-│   ├── Hero.tsx
-│   ├── Services.tsx
-│   ├── About.tsx
-│   └── Footer.tsx
-├── pages
-│   ├── _app.tsx
-│   └── index.tsx
+├── _components
+│   ├── ui
+│   │   └── button.tsx
+│   │   └── footer.tsx
+│   │   └── hero.tsx
+│   ├── header.tsx
+│   ├── modalServiceSelector.tsx
+│   ├── scrollToTopButton.tsx
+│   ├── hero.tsx
+│   ├── services.tsx
+│   ├── about-barber.tsx
+│   ├── card.tsx
+│   └── footer.tsx
+├── app
+│   ├── page.tsx
+│   ├── layout.tsx
+│   ├── globals.css
+├── data
+│   ├── servicesData.js
+├── lib
+│   ├── utils.js
 ├── public
-│   ├── images
-│   │   └── barber.jpg
-│   └── favicon.ico
-├── styles
-│   └── globals.css
+│   └── cartoon_interior_barbershop.png
+│   └── tesoura.ico
 └── README.md
 ```
 
@@ -74,8 +83,8 @@ Lista os serviços oferecidos pela barbearia.
 
 - **Header**: Barra de navegação com links para diferentes seções da página.
 - **Hero**: Seção introdutória com uma mensagem de boas-vindas e uma imagem.
-- **Services**: Lista os serviços oferecidos pela barbearia.
 - **About**: Informações sobre o barbeiro e a barbearia.
+- **Services**: Lista os serviços oferecidos pela barbearia.
 - **Footer**: Informações de contato e links para redes sociais.
 
 ### Estilização
