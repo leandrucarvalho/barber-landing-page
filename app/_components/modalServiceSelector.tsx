@@ -63,7 +63,7 @@ const ModalServiceSelector: React.FC<ModalServiceSelectorProps> = ({
       </div>
 
       <div className="relative">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto max-h-96 mb-12">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto max-h-96 mb-16">
           {servicesData.map((service) => (
             <li
               key={service.title}
