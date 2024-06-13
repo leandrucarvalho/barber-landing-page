@@ -3,6 +3,8 @@ import Modal from "react-modal";
 import { servicesData } from "../data/servicesData";
 import { Service } from "@/types/services";
 import ReactModal from "react-modal";
+import { faXmarkCircle } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 ReactModal.setAppElement("#root");
 
@@ -53,9 +55,15 @@ const ModalServiceSelector: React.FC<ModalServiceSelectorProps> = ({
       className="absolute bg-white p-6 rounded-md shadow-md top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
     >
-      <h2 className="text-2xl font-bold mb-4">Selecione um Serviço</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-2xl font-bold">Selecione um Serviço</h2>
+        <button onClick={onRequestClose}>
+          <FontAwesomeIcon icon={faXmarkCircle} />
+        </button>
+      </div>
+
       <div className="relative">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto max-h-96">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto max-h-96 mb-12">
           {servicesData.map((service) => (
             <li
               key={service.title}
